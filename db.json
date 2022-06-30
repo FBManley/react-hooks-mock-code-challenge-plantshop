@@ -41,6 +41,30 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "New Plant",
+      "image": "\"./images/aloe.jpg\"",
+      "price": 69.69,
+      "id": 8
+    },
+    {
+      "name": "Baby",
+      "image": "\"./images/aloe.jpg\"",
+      "price": 1,
+      "id": 9
+    },
+    {
+      "name": "Baby",
+      "image": "\"./images/aloe.jpg\"",
+      "price": 1,
+      "id": 10
+    },
+    {
+      "name": "Teddy",
+      "image": "a",
+      "price": 1,
+      "id": 11
     }
   ]
 }
