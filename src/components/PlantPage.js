@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import PlantList from "./PlantList"
-import NewPlantForm from "./NewPlantForm"
-import Search from "./Search"
+import PlantList from "./PlantList";
+import NewPlantForm from "./NewPlantForm";
+import Search from "./Search";
+import NewForm from "./NewForm";
 
 function PlantPage() {
   const [plants, setPlants] = useState([]);
@@ -39,7 +40,10 @@ function PlantPage() {
     setPlants(updatedPlantsArray)
   }
 
-
+  function handleAddTree(newTree){
+    setPlants([...plants, newTree])
+  }
+  
   return (
     <main>
        <NewPlantForm 
@@ -53,6 +57,9 @@ function PlantPage() {
       plants={displayedPlants}
       onDeletePlant={handleDeletePlant}
       onUpdatePlant={handleUpdatePlant}
+      />
+      <NewForm 
+      onAddTree={handleAddTree}
       />
     </main>
   );
